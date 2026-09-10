@@ -36,6 +36,17 @@ Para este proyecto se usó el Dataset Telco Customer Churn, este consta de una l
 * **Servicios de Seguridad y Soporte**: Los clientes que no cuentan con servicios adicionales de seguridad o soporte técnico presentan una tasa de cancelación significativamente mayor. Esto indica que un ecosistema de servicios más integrado reduce el abandono.
 * **Método de Pago**: El método de pago cheque electrónico concentra la mayor cantidad de clientes que deciden abandonar el servicio frente a transferencias bancarias o tarjetas de crédito automáticas.
 
+## Metodología Utilizada (CRISP-DM)
+
+El desarrollo de este proyecto se estructuró bajo la metodología estandarizada CRISP-DM (Cross-Industry Standard Process for Data Science), la cual garantiza un enfoque iterativo y orientado a la resolución de problemas de negocio:
+
+1. **Comprensión del Negocio:** Definición del problema de alta tasa de cancelación, establecimiento de objetivos orientados a la retención y selección de KPIs (como *Recall* y *ROI*).
+2. **Comprensión y Preparación de los Datos:** Carga del dataset de Telco Customer Churn, validación de tipos de datos (conversión de `TotalCharges`), detección y tratamiento de nulos y codificación de variables categóricas.
+3. **Análisis Exploratorio de Datos (EDA):** Visualización de la distribución de la variable objetivo, análisis de correlaciones numéricas y evaluación del impacto de variables clave (como el tipo de contrato) sobre la cancelación.
+4. **Modelamiento:** Entrenamiento y comparación de modelos de clasificación supervisada (Regresión Logística y Random Forest).
+5. **Evaluación:** Análisis de matrices de confusión, métricas de rendimiento y selección del modelo óptimo para el negocio.
+6. **Despliegue / Conclusiones:** Reflexión sobre el impacto ético, mitigación de sesgos y potencial aplicación de las predicciones en campañas de marketing preventivas.
+
 ## 3. Modelamiento y Comparación de Algoritmos
 Se entrenaron dos modelos de clasificación supervisada para predecir la variable objetivo churn: una Regresión Logística y un Random Forest.
 | Métrica / Modelo | Regresión Logística | Random Forest |
