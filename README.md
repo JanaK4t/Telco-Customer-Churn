@@ -45,7 +45,6 @@ El desarrollo de este proyecto se estructuró bajo la metodología estandarizada
 3. **Análisis Exploratorio de Datos (EDA):** Visualización de la distribución de la variable objetivo, análisis de correlaciones numéricas y evaluación del impacto de variables clave (como el tipo de contrato) sobre la cancelación.
 4. **Modelamiento:** Entrenamiento y comparación de modelos de clasificación supervisada (Regresión Logística y Random Forest).
 5. **Evaluación:** Análisis de matrices de confusión, métricas de rendimiento y selección del modelo óptimo para el negocio.
-6. **Despliegue / Conclusiones:** Reflexión sobre el impacto ético, mitigación de sesgos y potencial aplicación de las predicciones en campañas de marketing preventivas.
 
 ## 3. Modelamiento y Comparación de Algoritmos
 Se entrenaron dos modelos de clasificación supervisada para predecir la variable objetivo churn: una Regresión Logística y un Random Forest.
