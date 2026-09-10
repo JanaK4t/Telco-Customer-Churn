@@ -31,8 +31,11 @@ Para este proyecto se usó el Dataset Telco Customer Churn, este consta de una l
 
 ## 2. Hallazgos del Análisis Exploratorio (EDA)
 * **Desbalance de Clases:** El análisis de la distribución de la variable objetivo muestra una proporción menor de clientes que cancelan el servicio frente a los que se quedan, lo que justifica el uso de métricas orientadas a la matriz de confusión (como el Recall) por encima del Accuracy global.
-* **Variables Relevantes:** Los gráficos bivariados evidencian que los clientes con contratos a corto plazo y cargos mensuales elevados presentan una propensión significativamente mayor al abandono en comparación con aquellos bajo contratos anuales o bianuales.
-  
+* **Variables Relevantes:** Los gráficos bivariados evidencian que los clientes con contratos a corto plazo y cargos mensuales elevados presentan una propensión significativamente mayor al abandono en comparación con aquellos bajo contratos anuales o bianuales, por esto contrato es uno de los predictores más potentes del modelo.
+* **Servicio de Internet**: Los clientes que utilizan fibra óptica muestran una proporción de cancelación inusualmente alta en comparación con los usuarios de DSL o aquellos sin servicio de internet, lo que sugiere posibles problemas de satisfacción con este tipo de conexión o tarifas competitivas en el mercado.
+* **Servicios de Seguridad y Soporte**: Los clientes que no cuentan con servicios adicionales de seguridad o soporte técnico presentan una tasa de cancelación significativamente mayor. Esto indica que un ecosistema de servicios más integrado reduce el abandono.
+* **Método de Pago**: El método de pago cheque electrónico concentra la mayor cantidad de clientes que deciden abandonar el servicio frente a transferencias bancarias o tarjetas de crédito automáticas.
+
 ## 3. Modelamiento y Comparación de Algoritmos
 Se entrenaron dos modelos de clasificación supervisada para predecir la variable objetivo churn: una Regresión Logística y un Random Forest.
 | Métrica / Modelo | Regresión Logística | Random Forest |
