@@ -29,7 +29,7 @@ Para este proyecto se usó el Dataset Telco Customer Churn, este consta de una l
 * **Transformación de Variables:** La variable objetivo `Churn` fue mapeada a valores binarios, y se aplicó codificación *One-Hot Encoding* para transformar las variables categóricas en estructuras numéricas aptas para los algoritmos de Machine Learning, además la columna  `TotalCharges` fue transformada de objeto a integer.
 * **Valores Nulos y Duplicados:** Se verificó la presencia de nulos y duplicados, ambos tipos de datos fueron eliminados del Dataset.
 
-## 2. Hallazgos del Análisis Exploratorio (EDA)
+### Hallazgos del Análisis Exploratorio (EDA)
 * **Desbalance de Clases:** El análisis de la distribución de la variable objetivo muestra una proporción menor de clientes que cancelan el servicio frente a los que se quedan, lo que justifica el uso de métricas orientadas a la matriz de confusión (como el Recall) por encima del Accuracy global.
 * **Variables Relevantes:** Los gráficos bivariados evidencian que los clientes con contratos a corto plazo y cargos mensuales elevados presentan una propensión significativamente mayor al abandono en comparación con aquellos bajo contratos anuales o bianuales, por esto contrato es uno de los predictores más potentes del modelo.
 * **Servicio de Internet**: Los clientes que utilizan fibra óptica muestran una proporción de cancelación inusualmente alta en comparación con los usuarios de DSL o aquellos sin servicio de internet, lo que sugiere posibles problemas de satisfacción con este tipo de conexión o tarifas competitivas en el mercado.
